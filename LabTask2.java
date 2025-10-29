@@ -19,7 +19,7 @@ class NumberPrinter implements Runnable {
 
 public class LabTask2 {
     public static void main(String[] args) {
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 6; i++) {
             Runnable task = new NumberPrinter(i);
             Thread thread = new Thread(task);
             thread.start();
